@@ -1,9 +1,9 @@
 {
-    "name": "aleksandr.kornienko/fun-task",
+    "name": "globality/fun-task",
     "type": "project",
     "autoload": {
         "psr-4": {
-            "AleksandrKornienko\\FunTask\\": "src/"
+            "FunTask\\": "src/"
         }
     },
 

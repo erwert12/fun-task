@@ -1,0 +1,35 @@
+{
+    "name": "aleksandr.kornienko/fun-task",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "AleksandrKornienko\\FunTask\\": "src/"
+        }
+    },
+
+    "require": {
+        "php": "^7.4",
+        "myclabs/php-enum": "^1.8",
+        "symfony/console": "^5.4"
+    },
+    "config": {
+        "platform": {
+            "php": "7.4.0"
+        },
+        "sort-packages": true
+
+},
+    "require-dev": {
+        "phpstan/phpstan": "^1.10"
+    },
+
+    "scripts": {
+        "stan": "phpstan analyse -c phpstan.neon"
+    },
+
+
+    "extra": {
+        "note": "Сверху команда для удобного запуска PHPstan-a"
+    }
+
+}

@@ -4,6 +4,8 @@
 require __DIR__ . '/../vendor/autoload.php';
 
 use Symfony\Component\Console\Application;
+use FunTask\Command\DumpTreeCommand;
 
 $application = new Application('FunTask', '1.0.0');
+$application->add(new DumpTreeCommand());
 $application->run();

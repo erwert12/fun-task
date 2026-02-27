@@ -1,0 +1,316 @@
+[
+  {
+    "id": "root",
+    "name": "Каталог",
+    "tags": [
+      "root"
+    ],
+    "children": [
+      {
+        "id": "electronics",
+        "name": "Электроника",
+        "tags": [
+          "menu",
+          "searchable"
+        ],
+        "children": [
+          {
+            "id": "smartphones",
+            "name": "Смартфоны",
+            "tags": [
+              "menu",
+              "promo",
+              "searchable"
+            ],
+            "children": [
+              {
+                "id": "android",
+                "name": "Android-смартфоны",
+                "tags": [
+                  "menu",
+                  "searchable",
+                  "region:kg"
+                ],
+                "children": [
+                  {
+                    "id": "android-budget",
+                    "name": "Бюджетные",
+                    "tags": [
+                      "searchable"
+                    ],
+                    "children": []
+                  },
+                  {
+                    "id": "android-flagship",
+                    "name": "Флагманы",
+                    "tags": [
+                      "promo",
+                      "searchable"
+                    ],
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "id": "ios",
+                "name": "iOS-смартфоны",
+                "tags": [
+                  "menu",
+                  "searchable",
+                  "promo"
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "accessories",
+            "name": "Аксессуары",
+            "tags": [
+              "searchable"
+            ],
+            "children": [
+              {
+                "id": "chargers",
+                "name": "Зарядные устройства",
+                "tags": [
+                  "searchable",
+                  "menu"
+                ],
+                "children": []
+              },
+              {
+                "id": "cases",
+                "name": "Чехлы",
+                "tags": [
+                  "searchable"
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "tv",
+            "name": "Телевизоры",
+            "tags": [
+              "menu",
+              "searchable"
+            ],
+            "children": [
+              {
+                "id": "oled",
+                "name": "OLED",
+                "tags": [
+                  "searchable",
+                  "promo"
+                ],
+                "children": []
+              },
+              {
+                "id": "lcd",
+                "name": "LCD",
+                "tags": [
+                  "searchable"
+                ],
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "home-appliances",
+        "name": "Бытовая техника",
+        "tags": [
+          "menu",
+          "searchable"
+        ],
+        "children": [
+          {
+            "id": "kitchen",
+            "name": "Кухня",
+            "tags": [
+              "menu"
+            ],
+            "children": [
+              {
+                "id": "coffee-machines",
+                "name": "Кофемашины",
+                "tags": [
+                  "promo",
+                  "searchable"
+                ],
+                "children": []
+              },
+              {
+                "id": "microwaves",
+                "name": "Микроволновки",
+                "tags": [
+                  "searchable"
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "cleaning",
+            "name": "Уборка",
+            "tags": [
+              "menu",
+              "searchable"
+            ],
+            "children": [
+              {
+                "id": "vacuum-cleaners",
+                "name": "Пылесосы",
+                "tags": [
+                  "searchable",
+                  "promo"
+                ],
+                "children": [
+                  {
+                    "id": "robot-vacuum",
+                    "name": "Роботы-пылесосы",
+                    "tags": [
+                      "searchable"
+                    ],
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "fashion",
+        "name": "Одежда и обувь",
+        "tags": [
+          "menu",
+          "searchable"
+        ],
+        "children": [
+          {
+            "id": "men",
+            "name": "Мужчинам",
+            "tags": [
+              "menu",
+              "searchable"
+            ],
+            "children": [
+              {
+                "id": "men-shoes",
+                "name": "Обувь",
+                "tags": [
+                  "hidden"
+                ],
+                "children": []
+              },
+              {
+                "id": "men-clothing",
+                "name": "Одежда",
+                "tags": [
+                  "searchable"
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "women",
+            "name": "Женщинам",
+            "tags": [
+              "menu",
+              "searchable"
+            ],
+            "children": [
+              {
+                "id": "women-shoes",
+                "name": "Обувь",
+                "tags": [
+                  "searchable",
+                  "promo"
+                ],
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "adult",
+        "name": "Товары 18+",
+        "tags": [
+          "menu",
+          "restricted:18plus"
+        ],
+        "children": [
+          {
+            "id": "adult-accessories",
+            "name": "Аксессуары",
+            "tags": [
+              "searchable",
+              "restricted:18plus"
+            ],
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "alcohol",
+        "name": "Алкоголь",
+        "tags": [
+          "restricted:18plus",
+          "searchable",
+          "menu"
+        ],
+        "children": [
+          {
+            "id": "wine",
+            "name": "Вино",
+            "tags": [
+              "searchable",
+              "region:ru"
+            ],
+            "children": []
+          },
+          {
+            "id": "spirits",
+            "name": "Крепкий алкоголь",
+            "tags": [
+              "searchable"
+            ],
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "internal",
+        "name": "Служебные категории",
+        "tags": [
+          "restricted:staff-only"
+        ],
+        "children": [
+          {
+            "id": "deprecated",
+            "name": "Устаревшие",
+            "tags": [
+              "restricted:staff-only"
+            ],
+            "children": [
+              {
+                "id": "old-electronics",
+                "name": "Старая электроника",
+                "tags": [
+                  "restricted:staff-only",
+                  "hidden"
+                ],
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

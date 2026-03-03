@@ -3,19 +3,21 @@ declare(strict_types=1);
 
 namespace FunTask\Domain;
 
+use InvalidArgumentException;
+
 final class Tag
 {
     /** @var string */
-    private $type;
+    private string $type;
 
     /** @var string|null */
-    private $value;
+    private ?string $value;
 
     private function __construct(string $type, ?string $value)
     {
         $type = trim($type);
         if ($type === '') {
-            throw new \InvalidArgumentException('Tag type must not be empty');
+            throw new InvalidArgumentException('Tag type must not be empty');
         }
 
         $this->type = $type;
@@ -26,7 +28,7 @@ final class Tag
     {
         $raw = trim($raw);
         if ($raw === '') {
-            throw new \InvalidArgumentException('Tag string must not be empty');
+            throw new InvalidArgumentException('Tag string must not be empty');
         }
 
         $parts = explode(':', $raw, 2);
@@ -53,8 +55,12 @@ final class Tag
 
     public function is(string $type, ?string $value = null): bool
     {
-        if ($this->type !== $type) return false;
-        if ($value === null) return true;
+        if ($this->type !== $type) {
+            return false;
+        }
+        if ($value === null) {
+            return true;
+        }
         return $this->value === $value;
     }
 

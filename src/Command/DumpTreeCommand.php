@@ -12,7 +12,7 @@ use Symfony\Component\Console\Output\OutputInterface;
 
 final class DumpTreeCommand extends Command
 {
-    protected static $defaultName = 'dumpTree';
+    protected static $defaultName = 'app:dump-tree';
 
     protected function configure(): void
     {
@@ -29,8 +29,10 @@ final class DumpTreeCommand extends Command
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $path = $input->getArgument('path');
-        if(!is_string($path)) {
-            throw new \InvalidArgumentException('Path must be a string');}
+        if(!is_string($path))
+        {
+            throw new \InvalidArgumentException('Path must be a string');
+        }
 
         $loader = new CategoryTreeLoader();
         $root = $loader->load($path);
@@ -42,7 +44,7 @@ final class DumpTreeCommand extends Command
 
     private function printTree(Category $node, int $depth, OutputInterface $output): void
     {
-        $output->writeln(str_repeat('  ', $depth) . $node->name() . ' (' . $node->id() . ')');
+        $output->writeln(str_repeat('  ', $depth) . $node->name() . ' => [' . $node->id() . ']');
 
         foreach ($node->children() as $child) {
             $this->printTree($child, $depth + 1, $output);

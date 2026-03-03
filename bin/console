@@ -1,11 +1,19 @@
 #!/usr/bin/env php
 <?php
+declare(strict_types=1);
 
 require __DIR__ . '/../vendor/autoload.php';
 
 use Symfony\Component\Console\Application;
 use FunTask\Command\DumpTreeCommand;
+use FunTask\Command\MenuBuilderCommand;
 
 $application = new Application('FunTask', '1.0.0');
 $application->add(new DumpTreeCommand());
-$application->run();
+$application->add(new MenuBuilderCommand());
+try {
+    $application->run();
+} catch (Exception $err) {
+    echo 'Error: ' . $err->getMessage() . PHP_EOL;
+    exit(1);
+}

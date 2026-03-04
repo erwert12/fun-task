@@ -8,11 +8,13 @@ use Symfony\Component\Console\Application;
 use FunTask\Command\DumpTreeCommand;
 use FunTask\Command\MenuBuilderCommand;
 use FunTask\Command\SearchIndexExportCommand;
+use FunTask\Command\VisibilityAuditCommand;
 
 $application = new Application('FunTask', '1.0.0');
 $application->add(new DumpTreeCommand());
 $application->add(new MenuBuilderCommand());
 $application->add(new SearchIndexExportCommand());
+$application->add(new VisibilityAuditCommand());
 try {
     $application->run();
 } catch (Exception $err) {

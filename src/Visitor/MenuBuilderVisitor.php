@@ -4,7 +4,6 @@ declare(strict_types=1);
 namespace FunTask\Visitor;
 
 use FunTask\Domain\Category;
-use FunTask\Domain\Tag;
 
 final class MenuBuilderVisitor implements CategoryVisitor
 {

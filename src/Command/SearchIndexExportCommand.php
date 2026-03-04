@@ -52,7 +52,7 @@ final class SearchIndexExportCommand extends Command
             return Command::FAILURE;
         }
 
-        $outputFile = 'search_index_export.json';
+        $outputFile = 'data/search_index_export.json';
         if (file_put_contents($outputFile, $json) === false)
         {
             $output->writeln('<error>Failed to write to file</error>');
@@ -67,8 +67,12 @@ final class SearchIndexExportCommand extends Command
     {
         $raw = strtolower(trim($raw));
 
-        if (in_array($raw, ['1','true','yes','y','on'], true)) return true;
-        if (in_array($raw, ['0','false','no','n','off'], true)) return false;
+        if (in_array($raw, ['1','true','yes','y','on'], true)) {
+            return true;
+        }
+        if (in_array($raw, ['0','false','no','n','off'], true)) {
+            return false;
+        }
 
         throw new \InvalidArgumentException('Invalid boolean value: ' . $raw);
     }

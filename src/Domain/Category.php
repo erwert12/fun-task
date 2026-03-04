@@ -6,16 +6,16 @@ namespace FunTask\Domain;
 final class Category
 {
     /** @var string */
-    private $id;
+    private string $id;
 
     /** @var string */
-    private $name;
+    private string $name;
 
     /** @var Tag[] */
-    private $tags;
+    private array $tags;
 
     /** @var Category[] */
-    private $children;
+    private array $children;
 
     /**
      * @param Tag[] $tags
@@ -26,8 +26,12 @@ final class Category
         $id = trim($id);
         $name = trim($name);
 
-        if ($id === '') throw new \InvalidArgumentException('Category id must not be empty');
-        if ($name === '') throw new \InvalidArgumentException('Category name must not be empty');
+        if ($id === '') {
+            throw new \InvalidArgumentException('Category id must not be empty');
+        }
+        if ($name === '') {
+            throw new \InvalidArgumentException('Category name must not be empty');
+        }
 
         $this->id = $id;
         $this->name = $name;
@@ -47,7 +51,9 @@ final class Category
     public function hasTagType(string $type): bool
     {
         foreach ($this->tags as $tag) {
-            if ($tag->isType($type)) return true;
+            if ($tag->isType($type)) {
+                return true;
+            }
         }
         return false;
     }
@@ -55,7 +61,9 @@ final class Category
     public function hasTag(string $type, ?string $value = null): bool
     {
         foreach ($this->tags as $tag) {
-            if ($tag->is($type, $value)) return true;
+            if ($tag->is($type, $value)) {
+                return true;
+            }
         }
         return false;
     }

@@ -1,0 +1,162 @@
+[
+    {
+        "id": "electronics",
+        "name": "Электроника",
+        "adult": false,
+        "regions": []
+    },
+    {
+        "id": "smartphones",
+        "name": "Смартфоны",
+        "adult": false,
+        "regions": []
+    },
+    {
+        "id": "android",
+        "name": "Android-смартфоны",
+        "adult": false,
+        "regions": [
+            "kg"
+        ]
+    },
+    {
+        "id": "android-budget",
+        "name": "Бюджетные",
+        "adult": false,
+        "regions": []
+    },
+    {
+        "id": "android-flagship",
+        "name": "Флагманы",
+        "adult": false,
+        "regions": []
+    },
+    {
+        "id": "ios",
+        "name": "iOS-смартфоны",
+        "adult": false,
+        "regions": []
+    },
+    {
+        "id": "accessories",
+        "name": "Аксессуары",
+        "adult": false,
+        "regions": []
+    },
+    {
+        "id": "chargers",
+        "name": "Зарядные устройства",
+        "adult": false,
+        "regions": []
+    },
+    {
+        "id": "cases",
+        "name": "Чехлы",
+        "adult": false,
+        "regions": []
+    },
+    {
+        "id": "tv",
+        "name": "Телевизоры",
+        "adult": false,
+        "regions": []
+    },
+    {
+        "id": "oled",
+        "name": "OLED",
+        "adult": false,
+        "regions": []
+    },
+    {
+        "id": "lcd",
+        "name": "LCD",
+        "adult": false,
+        "regions": []
+    },
+    {
+        "id": "home-appliances",
+        "name": "Бытовая техника",
+        "adult": false,
+        "regions": []
+    },
+    {
+        "id": "coffee-machines",
+        "name": "Кофемашины",
+        "adult": false,
+        "regions": []
+    },
+    {
+        "id": "microwaves",
+        "name": "Микроволновки",
+        "adult": false,
+        "regions": []
+    },
+    {
+        "id": "vacuum-cleaners",
+        "name": "Пылесосы",
+        "adult": false,
+        "regions": []
+    },
+    {
+        "id": "robot-vacuum",
+        "name": "Роботы-пылесосы",
+        "adult": false,
+        "regions": []
+    },
+    {
+        "id": "fashion",
+        "name": "Одежда и обувь",
+        "adult": false,
+        "regions": []
+    },
+    {
+        "id": "men",
+        "name": "Мужчинам",
+        "adult": false,
+        "regions": []
+    },
+    {
+        "id": "men-clothing",
+        "name": "Одежда",
+        "adult": false,
+        "regions": []
+    },
+    {
+        "id": "women",
+        "name": "Женщинам",
+        "adult": false,
+        "regions": []
+    },
+    {
+        "id": "women-shoes",
+        "name": "Обувь",
+        "adult": false,
+        "regions": []
+    },
+    {
+        "id": "adult-accessories",
+        "name": "Аксессуары",
+        "adult": true,
+        "regions": []
+    },
+    {
+        "id": "alcohol",
+        "name": "Алкоголь",
+        "adult": true,
+        "regions": []
+    },
+    {
+        "id": "wine",
+        "name": "Вино",
+        "adult": false,
+        "regions": [
+            "ru"
+        ]
+    },
+    {
+        "id": "spirits",
+        "name": "Крепкий алкоголь",
+        "adult": false,
+        "regions": []
+    }
+]

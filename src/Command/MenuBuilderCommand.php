@@ -6,7 +6,6 @@ namespace FunTask\Command;
 use FunTask\Domain\CategoryTreeLoader;
 use FunTask\Visitor\TreeWalker;
 use FunTask\Visitor\MenuBuilderVisitor;
-use http\Exception\InvalidArgumentException;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
@@ -72,8 +71,12 @@ final class MenuBuilderCommand extends Command
     {
         $raw = strtolower(trim($raw));
 
-        if (in_array($raw, ['1','true','yes','y','on'], true)) return true;
-        if (in_array($raw, ['0','false','no','n','off'], true)) return false;
+        if (in_array($raw, ['1','true','yes','y','on'], true)) {
+            return true;
+        }
+        if (in_array($raw, ['0','false','no','n','off'], true)) {
+            return false;
+        }
 
         throw new \InvalidArgumentException('Invalid boolean value: ' . $raw);
     }
